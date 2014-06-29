@@ -1,0 +1,85 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+	<link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+	<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <hgroup>
+                <h1 class="brand-title">Yelp<br>Pseudo-API</h1>
+                <h2 class="brand-tagline">Get'cher yelp here</h2>
+            </hgroup>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://www.yelp.com/developers/documentation/v2/search_api">Yelp Search Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="http://www.yelp.com/developers/documentation/v2/business">Yelp Business Docs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            <!-- A wrapper for all the blog posts -->
+            <div class="posts">
+                <!-- A single blog post -->
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">API Rules</h2> 
+                    </header>
+                    <div class="post-description">
+                        <p>
+                            <li>100 requests per hour per IP.</li>
+                            <li>Once the limit has been reached, you must wait until an hour from your first request to get a reponse.</li>
+                            <li>Email me if you have any problems: <a href="mailto:ryanharrisonlewis@gmail.com">ryanharrisonlewis@gmail.com</a></li>
+                        </p>
+                    </div>
+                </section>
+                <section class="post">
+                    <header class="post-header">
+
+                        <h2 class="post-title">Yelp General Search</h2> <a class="post-category post-category-pure" href="http://www.yelp.com/developers/documentation/v2/search_api">Yelp API Documentation</a>
+
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            <li>Example query: <a href="/search?term=indian&location=Lynnwood">/search?term=indian&amp;location=Lynnwood</a></li>
+                            <li>A lot of query parameters available. View them on the Yelp API Documentation page.</li>
+                        </p>
+                    </div>
+                </section>
+                <section class="post">
+                    <header class="post-header">
+                        <h2 class="post-title">Yelp Business Search</h2> <a class="post-category post-category-pure" href="http://www.yelp.com/developers/documentation/v2/business">Yelp API Documentation</a>
+
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            <li>Example query: <a href="/business/caravan-kebab-edmonds">/business/caravan-kebab-edmonds</a></li>
+                            <li>Get the business id from a General Search. No other parameters available</li>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="https://twitter.com/ryanmurakami">Twitter</a></li>
+                        <li><a href="https://github.com/ryanmurakami">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

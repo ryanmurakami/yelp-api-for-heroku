@@ -1,0 +1,18 @@
+{
+  "name": "yelp_api",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "~6.0.2",
+    "oauth": "~0.9.12",
+    "handlebars": "~2.0.0-alpha.4",
+    "limiter": "~1.0.5"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
